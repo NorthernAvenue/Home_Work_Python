@@ -34,7 +34,7 @@ for coin in coins_str:
         flips_one += 1
 if flips_zero == flips_one:
     print("Без разницы какие монетки переворачивать")
-elif flips_zero <= flips_one:
+elif flips_zero < flips_one:
     print(
         f"Минимальное количество монет, которые нужно перевернуть: {flips_zero}")
 else:
