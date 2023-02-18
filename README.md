@@ -1,1 +1,1 @@
-# Home_Work_Python
+# :globe_with_meridians: Здесь собраны домашние задания по курсу "Знакомство с языком Python"
