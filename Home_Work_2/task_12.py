@@ -8,21 +8,40 @@
 
 import math
 
-s = int(input("Сумма = "))
-p = int(input("Произведение = "))
+while True:
+    s = input("Сумма = ")
+    p = input("Произведение = ")
 
-discriminant = s**2-4*p
+    if not s.isdigit() or not p.isdigit():
+        print("Сумма и произведение должны быть натуральными числами")
+        continue
 
-if discriminant < 0:
-    x = y = s/2
-    print(f"Оба числа равны{x}")
-else:
-    x = round((s-math.sqrt(discriminant))/2)
-    y = round((s+math.sqrt(discriminant))/2)
-    print(f"Первое число = {x}, второе = {y}")
+    s = int(s)
+    p = int(p)
+
+    if s < 1 or p < 1:
+        print("Сумма и произведение должны быть натуральными числами")
+        continue
+
+    discriminant = s**2-4*p
+
+    if discriminant < 0:
+        x = y = s/2
+        print(f"Оба числа равны{int(x)}")
+    else:
+        x = round((s-math.sqrt(discriminant))/2)
+        y = round((s+math.sqrt(discriminant))/2)
+        if x < 1 or x > 1000 or y < 1 or y > 1000:
+            print("x и y должны быть натуральными числами, не превышающими 1000")
+        else:
+            if x + y == s and x * y == p:
+                print(f"Первое число = {int(x)}, второе = {int(y)}")
+                break
+            else:
+                print("Некорректное решение")
 
 
-# Решение без библиотеки
+# Решение без библиотеки и обработки исключей и условий
 # s = int(input("Сумма = "))
 # p = int(input("Произведение = "))
 # D = s*s - 4*p
