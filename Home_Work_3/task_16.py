@@ -19,8 +19,8 @@ print(array)
 x = int(input("Введите искомое число: "))
 count = 0
 
-for i in range(size):
+for i in range(len(array)):
     if array[i] == x:
         count += 1
 
-print(count)
+print(f"Число {x} встречается {count} раз(а)")
