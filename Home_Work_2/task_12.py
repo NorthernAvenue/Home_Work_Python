@@ -23,14 +23,14 @@ while True:
         print("Сумма и произведение должны быть натуральными числами")
         continue
 
-    discriminant = s**2-4*p
+    discriminant = s**2 - 4 * p
 
     if discriminant < 0:
-        x = y = s/2
+        x = y = s / 2
         print(f"Оба числа равны{int(x)}")
     else:
-        x = round((s-math.sqrt(discriminant))/2)
-        y = round((s+math.sqrt(discriminant))/2)
+        x = round((s - math.sqrt(discriminant)) / 2)
+        y = round((s + math.sqrt(discriminant)) / 2)
         if x < 1 or x > 1000 or y < 1 or y > 1000:
             print("x и y должны быть натуральными числами, не превышающими 1000")
         else:
@@ -62,6 +62,3 @@ while True:
 #         print(x1, x2)
 #     else:
 #         print("Решений нет")
-
-
-

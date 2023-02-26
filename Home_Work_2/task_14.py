@@ -5,12 +5,12 @@
 n = int(input("Введите число: "))
 
 for i in range(n):
-    if pow(2,i) > n:
+    if pow(2, i) > n:
         break
     else:
-        print(pow(2,i))
-    
-# без pow 
+        print(pow(2, i))
+
+# без pow
 # n = int(input("Введите число: "))
 # result = 1
 
@@ -19,4 +19,3 @@ for i in range(n):
 #     result *=2
 #     if result > n:
 #         break
-
