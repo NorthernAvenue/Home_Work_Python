@@ -13,10 +13,6 @@ a1 = int(input("Первый элемент прогрессии: "))
 d = int(input("Шаг между соседними элементами: "))
 n = int(input("Кол-во элементов : "))
 
-progression = [a1 + (i-1)*d for i in range(1, n+1)]
+progression = [a1 + (i - 1) * d for i in range(1, n + 1)]
 
 print(*progression)
-
-
-
-
