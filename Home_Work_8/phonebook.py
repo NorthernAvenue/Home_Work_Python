@@ -173,6 +173,5 @@ def main():
     print('До свидания!')
 
 
-print(main())
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
