@@ -1,5 +1,4 @@
 import csv
-import os
 
 
 PHONEBOOK_FILE = 'phonebook.txt'
