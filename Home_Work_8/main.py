@@ -1,11 +1,11 @@
 import csv
-from add_contact_module import add_contact
-from delete_contact_module import delete_contact
-from display_phone_module import display_phonebook
-from export_module import export_phonebook
-from import_module import import_phonebook
-from modify_contact_module import modify_contact
-from search_contact_module import search_contact
+from modules.add_contact_module import add_contact
+from modules.delete_contact_module import delete_contact
+from modules.display_phone_module import display_phonebook
+from modules.export_module import export_phonebook
+from modules.import_module import import_phonebook
+from modules.modify_contact_module import modify_contact
+from modules.search_contact_module import search_contact
 
 
 # Основная программа
